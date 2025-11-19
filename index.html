@@ -3,66 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ycaro Sousa Games</title>
+  <title>Ycaro Sousa Projects</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- HEADER -->
   <header>
-    <div class="logo">Ycaro Sousa Games</div>
+    <div class="logo">Ycaro Sousa Projects</div>
     <nav>
       <a href="#home">Home</a>
-      <a href="#games">Games</a>
-      <a href="#brain-breaks">Brain Breaks</a>
+      <a href="#activities">Activities</a>
+      <a href="#license">License</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <section class="hero" id="home">
-    <h1>Welcome to Ycaro Sousa Games</h1>
-    <p>Play fun, safe, and engaging games right here!</p>
-    <a href="#games" class="btn">Explore Games</a>
+    <h1>Welcome to Ycaro Sousa Projects</h1>
+    <p>Educational and fun activities designed just for you!</p>
   </section>
 
-  <!-- GAMES -->
-  <section class="games" id="games">
-    <h2>Featured Games</h2>
-    <div class="game-list">
-      <div class="game-card" onclick="openGameModal('mathPuzzle')">
-        <h3>Math Puzzle</h3>
-        <p>Solve math challenges and score points.</p>
+  <!-- ACTIVITIES -->
+  <section class="activities" id="activities">
+    <h2>Interactive Activities</h2>
+    <div class="activity-list">
+      <div class="activity-card" onclick="openActivity('memoryChallenge')">
+        <h3>Memory Challenge</h3>
+        <p>Test your memory with a fun card-matching activity.</p>
       </div>
-      <div class="game-card" onclick="openGameModal('logicMaze')">
-        <h3>Logic Maze</h3>
-        <p>Navigate through the maze using arrow keys.</p>
+      <div class="activity-card" onclick="openActivity('colorMatch')">
+        <h3>Color Match</h3>
+        <p>Match the colors as fast as you can.</p>
       </div>
-      <div class="game-card" onclick="openGameModal('brainBreak')">
+      <div class="activity-card" onclick="openActivity('brainBreak')">
         <h3>Brain Break</h3>
-        <p>A fun mini-game to refresh your mind.</p>
+        <p>A small break to refresh your mind.</p>
       </div>
     </div>
   </section>
 
-  <!-- BRAIN BREAKS -->
-  <section class="brain-breaks" id="brain-breaks">
-    <h2>Brain Breaks</h2>
-    <div class="brain-list">
-      <div class="brain-card" onclick="openGameModal('break1')">
-        <h3>Quick Break 1</h3>
-        <p>This brain break game is not available yet.</p>
-      </div>
-      <div class="brain-card" onclick="openGameModal('break2')">
-        <h3>Quick Break 2</h3>
-        <p>This brain break game is not available yet.</p>
-      </div>
-    </div>
+  <!-- LICENSE -->
+  <section class="license" id="license">
+    <h2>License</h2>
+    <pre>
+MIT License
+
+Copyright (c) 2025 Ycaro Sousa
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+    </pre>
   </section>
 
-  <!-- GAME MODAL -->
-  <div id="gameModal" class="modal">
+  <!-- MODAL -->
+  <div id="activityModal" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeGameModal()">&times;</span>
-      <div id="gameContainer"></div>
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="activityContainer">Select an activity to play.</div>
     </div>
   </div>
 
