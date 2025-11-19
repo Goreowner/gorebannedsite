@@ -1,12 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Hub</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <h1>Welcome to My Website</h1>
-  <p>This is my first website!</p>
+  <header>
+    <div class="logo">GAMING HUB</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#games">Games</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Welcome to Gaming Hub</h1>
+    <p>Your world of games, updates, and adventure.</p>
+    <button id="startBtn">Play Now</button>
+  </section>
+
+  <section class="games" id="games">
+    <h2>Featured Games</h2>
+    <div class="game-list">
+      <div class="game-card">Game 1</div>
+      <div class="game-card">Game 2</div>
+      <div class="game-card">Game 3</div>
+    </div>
+  </section>
+
+  <section class="news" id="news">
+    <h2>Latest News</h2>
+    <p>Stay updated with gaming news and updates every week!</p>
+  </section>
+
+  <footer id="contact">
+    <p>© 2025 Gaming Hub | All rights reserved</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
