@@ -1,30 +1,28 @@
-const gameContainer = document.getElementById("gameContainer");
+const activityContainer = document.getElementById("activityContainer");
 
-function openGameModal(game) {
-  const modal = document.getElementById("gameModal");
+function openActivity(activity) {
+  const modal = document.getElementById("activityModal");
   modal.style.display = "flex";
-  gameContainer.innerHTML = "";
+  activityContainer.innerHTML = "";
 
-  if (game === 'mathPuzzle') {
-    gameContainer.innerHTML = `<p>Math Puzzle game coming soon!</p>`;
-  } else if (game === 'logicMaze') {
-    gameContainer.innerHTML = `<p>Logic Maze game coming soon!</p>`;
-  } else if (game === 'brainBreak') {
-    gameContainer.innerHTML = `<p>Brain Break mini-game coming soon!</p>`;
-  } else if (game.startsWith('break')) {
-    gameContainer.innerHTML = `<p>This Brain Break game is not available yet.</p>`;
+  if (activity === "memoryChallenge") {
+    activityContainer.innerHTML = "<p>Memory Challenge activity will appear here.</p>";
+  } else if (activity === "colorMatch") {
+    activityContainer.innerHTML = "<p>Color Match activity will appear here.</p>";
+  } else if (activity === "brainBreak") {
+    activityContainer.innerHTML = "<p>Brain Break activity will appear here.</p>";
   } else {
-    gameContainer.innerHTML = `<p>Game not available.</p>`;
+    activityContainer.innerHTML = "<p>Activity not available yet.</p>";
   }
 }
 
-function closeGameModal() {
-  document.getElementById("gameModal").style.display = "none";
-  gameContainer.innerHTML = "";
+function closeModal() {
+  document.getElementById("activityModal").style.display = "none";
+  activityContainer.innerHTML = "Select an activity to play.";
 }
 
-// Close modal when clicking outside
 window.onclick = function(event) {
-  const modal = document.getElementById("gameModal");
-  if (event.target === modal) closeGameModal();
+  const modal = document.getElementById("activityModal");
+  if (event.target === modal) closeModal();
 }
+
