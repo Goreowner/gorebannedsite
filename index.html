@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gaming Hub</title>
+  <title>Edu Gaming Hub</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- HEADER -->
   <header>
-    <div class="logo">GAMING HUB</div>
+    <div class="logo">EDU GAMING HUB</div>
     <nav>
       <a href="#home">Home</a>
       <a href="#games">Games</a>
@@ -19,4 +19,52 @@
   </header>
 
   <!-- HERO SECTION -->
-  <section c
+  <section class="hero" id="home">
+    <h1>Welcome to Edu Gaming Hub</h1>
+    <p>Learn, play, and challenge your brain safely!</p>
+  </section>
+
+  <!-- GAMES SECTION -->
+  <section class="games" id="games">
+    <h2>Featured Educational Games</h2>
+    <div class="game-list">
+      <div class="game-card" onclick="openGameModal('game1')">
+        <img src="https://i.imgur.com/q4FfKj2.png" alt="Math Game">
+        <h3>Math Puzzle</h3>
+        <p>Challenge your math skills with interactive puzzles.</p>
+      </div>
+      <div class="game-card" onclick="openGameModal('game2')">
+        <img src="https://i.imgur.com/5CmH7zV.png" alt="Coding Game">
+        <h3>Code Breaker</h3>
+        <p>Learn coding basics with fun interactive challenges.</p>
+      </div>
+      <div class="game-card" onclick="openGameModal('game3')">
+        <img src="https://i.imgur.com/FA0Gq4B.png" alt="Logic Game">
+        <h3>Logic Maze</h3>
+        <p>Solve logic puzzles and mazes to train your brain.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GAME MODAL -->
+  <div id="gameModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeGameModal()">&times;</span>
+      <iframe id="gameFrame" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- NEWS SECTION -->
+  <section class="news" id="news">
+    <h2>Latest Updates</h2>
+    <p>Check out new educational games and challenges every week!</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <p>© 2025 Edu Gaming Hub | All rights reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
