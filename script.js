@@ -18,11 +18,10 @@ function openActivity(activity) {
 
 function closeModal() {
   document.getElementById("activityModal").style.display = "none";
-  activityContainer.innerHTML = "Select an activity to play.";
+  activityContainer.innerHTML = "Select an activity to start.";
 }
 
 window.onclick = function(event) {
   const modal = document.getElementById("activityModal");
   if (event.target === modal) closeModal();
 }
-
