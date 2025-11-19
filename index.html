@@ -3,25 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edu Gaming Hub</title>
+  <title>Ycaro Sousa Games</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <!-- HEADER -->
   <header>
-    <div class="logo">EDU GAMING HUB</div>
+    <div class="logo">Ycaro Sousa Games</div>
     <nav>
       <a href="#home">Home</a>
       <a href="#games">Games</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
+      <a href="#brain-breaks">Brain Breaks</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <section class="hero" id="home">
-    <h1>Welcome to Edu Gaming Hub</h1>
-    <p>Learn, play, and take a fun brain break!</p>
+    <h1>Welcome to Ycaro Sousa Games</h1>
+    <p>Play fun, safe, and engaging games right here!</p>
+    <a href="#games" class="btn">Explore Games</a>
   </section>
 
   <!-- GAMES -->
@@ -30,15 +30,30 @@
     <div class="game-list">
       <div class="game-card" onclick="openGameModal('mathPuzzle')">
         <h3>Math Puzzle</h3>
-        <p>Solve simple math problems to score points.</p>
+        <p>Solve math challenges and score points.</p>
       </div>
       <div class="game-card" onclick="openGameModal('logicMaze')">
         <h3>Logic Maze</h3>
-        <p>Guide the square to the exit using arrow keys.</p>
+        <p>Navigate through the maze using arrow keys.</p>
       </div>
       <div class="game-card" onclick="openGameModal('brainBreak')">
         <h3>Brain Break</h3>
-        <p>Catch the falling stars! Quick fun game.</p>
+        <p>A fun mini-game to refresh your mind.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BRAIN BREAKS -->
+  <section class="brain-breaks" id="brain-breaks">
+    <h2>Brain Breaks</h2>
+    <div class="brain-list">
+      <div class="brain-card" onclick="openGameModal('break1')">
+        <h3>Quick Break 1</h3>
+        <p>This brain break game is not available yet.</p>
+      </div>
+      <div class="brain-card" onclick="openGameModal('break2')">
+        <h3>Quick Break 2</h3>
+        <p>This brain break game is not available yet.</p>
       </div>
     </div>
   </section>
